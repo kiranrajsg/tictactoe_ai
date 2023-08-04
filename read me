@@ -1,0 +1,42 @@
+This is a Python implementation of the classic Tic Tac Toe game with a simple AI that you can play against. The AI uses the Minimax algorithm to make its moves and offers a decent challenge to players.
+
+
+. Run the game using Python:
+
+
+
+ . Choose your game mode:
+   - Enter `1` for Single Player (play against the computer)
+   - Enter `2` for Multiplayer (play against a friend)
+
+. If you chose Single Player:
+   - Computer plays as "O", and you play as "X".
+   - Enter `1` to play first or `2` to play second.
+
+. If you chose Multiplayer:
+   - Player 1 plays as "X", and Player 2 plays as "O".
+   - Each player will be prompted to enter their position from [1, 2, 3, ..., 9] on their turn.
+
+. The game will continue until someone wins or it ends in a draw.
+
+## Board Representation
+
+The game board is represented as a 1-dimensional list with 9 elements, where each element corresponds to a cell on the board, as follows:
+                                1|2|3
+                                4|5|6
+                                7|8|9
+
+
+- Empty cells are represented by `_`.
+- Player X's moves are represented by `X`.
+- Player O's moves (Computer in Single Player mode) are represented by `O`.
+
+## How the AI Works
+
+The AI uses the Minimax algorithm to determine the best move. It explores all possible moves and assigns a score to each move. The AI maximizes its score while assuming that the opponent (human player) will make the best moves for themselves. This allows the AI to play optimally and make winning moves whenever possible.
+
+## Contributions
+
+Feel free to contribute to this project by opening issues or submitting pull requests. Any constructive feedback or bug reports are highly appreciated.
+
+Have fun playing Tic Tac Toe!
